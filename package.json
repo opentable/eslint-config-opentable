@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-opentable",
+  "version": "0.0.1",
+  "description": "This package provides OpenTable's .eslintrc as an extensible shared config.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/eslint-config-opentable.git"
+  },
+  "keywords": [
+    "eslint",
+    "opentable",
+    "config"
+  ],
+  "author": "Timmy Willison <timmywillisn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/eslint-config-opentable/issues"
+  },
+  "homepage": "https://github.com/opentable/eslint-config-opentable",
+  "dependencies": {
+    "eslint-config-airbnb": "^5.0.1"
+  }
+}
