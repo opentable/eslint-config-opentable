@@ -34,3 +34,6 @@ a more Coffeescript-like syntax as we begin the transfer from Coffeescript to ES
 - Nested ternaries are allowed.
 - Comma dangle is turned off. Some consider this good practice, some don't. We don't.
 - While we still enforce the capitalization convention when using `new`, we've included a very common capitalized factory function exception that should not be used with `new`: `$.Deferred`.
+
+## Contributing
+[TBD]
