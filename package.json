@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "This package provides OpenTable's .eslintrc as an extensible shared config.",
   "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "publishConfig": {
+    "registry": "http://artifactory.otenv.com/artifactory/api/npm/npm-local"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/opentable/eslint-config-opentable.git"
@@ -18,7 +24,13 @@
     "url": "https://github.com/opentable/eslint-config-opentable/issues"
   },
   "homepage": "https://github.com/opentable/eslint-config-opentable",
+  "peerDependencies": {
+    "eslint": "^1.0.0"
+  },
   "dependencies": {
     "eslint-config-airbnb": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.0.0"
   }
 }
