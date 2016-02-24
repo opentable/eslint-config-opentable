@@ -24,9 +24,6 @@
     "url": "https://github.com/opentable/eslint-config-opentable/issues"
   },
   "homepage": "https://github.com/opentable/eslint-config-opentable",
-  "peerDependencies": {
-    "eslint": "^1.0.0"
-  },
   "dependencies": {
     "eslint-config-airbnb": "^5.0.1"
   },
