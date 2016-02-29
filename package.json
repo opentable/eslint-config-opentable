@@ -6,9 +6,6 @@
   "scripts": {
     "test": "eslint ."
   },
-  "publishConfig": {
-    "registry": "http://artifactory.otenv.com/artifactory/api/npm/npm-local"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/opentable/eslint-config-opentable.git"
