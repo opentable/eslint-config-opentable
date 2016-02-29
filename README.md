@@ -29,7 +29,7 @@ a more Coffeescript-like syntax as we begin the transfer from Coffeescript to ES
   Fortunately, eslint should warn when it looks like a semicolon is required, but it doesn't happen often.
 - Double quotes instead of single.
 - Console logs are allowed.
-- Double equals (`==`) is allowed for one special case: `== null`. This allows you to determine equality with `undefined` and/or `null` in one statement.
+- Double equals (`==`) is permitted for one special case: `== null`. This allows you to determine equality with `undefined` and/or `null` in one statement.
 - Function names are not required in function expressions.
 - Nested ternaries are allowed.
 - Comma dangle is turned off. Some consider this good practice, some don't. We don't.
