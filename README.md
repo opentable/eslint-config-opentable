@@ -1,6 +1,6 @@
 # eslint-config-opentable
 
-This package provides OpenTable's .eslintrc as an extensible shared config.
+This package provides OpenTable's .eslintrc as an extensible shared config. We extend [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
 ## Usage
 
