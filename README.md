@@ -1,4 +1,4 @@
-# eslint-config-opentable
+# eslint-config-opentable ![Travis](https://travis-ci.org/opentable/eslint-config-opentable.svg?branch=master)
 
 This package provides OpenTable's .eslintrc as an extensible shared config. We extend [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
