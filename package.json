@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-opentable",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "This package provides OpenTable's .eslintrc as an extensible shared config.",
   "main": "index.js",
   "scripts": {
