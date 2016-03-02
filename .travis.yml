@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '5'
+- '4'
+- '0.12'
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: timmywillisn@gmail.com
+  api_key:
+    secure: ETR4Bq5YTNMDjYWBbZxR7wnVkR1S9+LFVPpfWZ0HCqQM1psPfIMRua9z+xE6s/NhQnQaQYf3YhXLIt7EOVOjCfMb39+PVlNf1xGmZZtCZLuHdbCFArj2mu2GtTocCYzROk+0joK5wNvAVA6H2WBaFLSNJX8HUtkkK56s8ZD4uLgZwC6VCy4ZOmgvIfE0ApXdPfRPc0+JqDBpexQAZg1TbqmgbGRqzm6niWMq9tV9YHAflp6ZPxyvL56Uchig64lw3fgJ3PWU0YYtkVoNpc5Rf2OAx3+x+G8DRGwxmT0kDSSeXKD3js4MwSZR/SDFDUkpK8E1fqB1mwKwqXBjRFeV8KBHE3iAidtfgiBjTs+fPz1IXC6IfX3HkgYbcklc1N51aZ/OlcQN/Ts1MFOn81xI1B/AqOlS/PEpwdddJJ1CPBD3a50s6H8ADcBEZxDoqbNjym79Ypdm7o353PV+XLLdpIZConbP9UnrIRdLH+eaxNGY3nAKO3KGILDEYaH7FTP2MmK/UlZD1cZm+F9malj03wya1MLwrEZHllvdjxIy9jadFdJ2Zk0MeGiMDFBqWuFBCXmqYEFMChhCS+X0MqtYSAz9jzi043K+IKPUIWDdgwecSKwSQD1pe2KksBkS2EMuB7Rxm9jgAxugcLulJkh6WmwyWHxj4A8Mhlxye0Qyqp4=
+  on:
+    tags: true
+    repo: opentable/eslint-config-opentable
