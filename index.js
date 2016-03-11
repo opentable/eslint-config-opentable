@@ -15,6 +15,7 @@ module.exports = {
       uninitialized: "always",
       initialized: "never"
     }],
+    "one-var-declaration-per-line": 0,
     quotes: [2, "double", "avoid-escape"],
     semi: [2, "never"],
     "space-before-function-paren": [2, "never"]
