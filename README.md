@@ -1,6 +1,6 @@
 # eslint-config-opentable ![Travis](https://travis-ci.org/opentable/eslint-config-opentable.svg?branch=master)
 
-This package provides OpenTable's .eslintrc as an extensible shared config. We extend [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
+This package provides OpenTable's .eslintrc as an extensible shared config. We extend [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base).
 
 ## Usage
 
@@ -14,9 +14,6 @@ The export lints ES6/2015+. It requires `eslint`.
 See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more information.
-
-**Note**: eslint-config-airbnb also lints react, but we are not including that at this time.
-There is no need to install its peer dependency "eslint-plugin-react".
 
 ## Major differences
 
@@ -32,5 +29,5 @@ a more Coffeescript-like syntax as we begin the transfer from Coffeescript to ES
 - Double equals (`==`) is permitted for one special case: `== null`. This allows you to determine equality with `undefined` and/or `null` in one statement.
 - Function names are not required in function expressions.
 - Nested ternaries are allowed.
-- Comma dangle is turned off. Some consider this good practice, some don't. We don't.
+- Comma dangle is turned off.
 - While we still enforce the capitalization convention when using `new`, we've included a very common capitalized factory function exception that should not be used with `new`: `$.Deferred`.
