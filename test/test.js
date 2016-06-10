@@ -3,18 +3,18 @@
  */
 import fs from "fs"
 import path from "path"
-import test from "tape"
+import base from "./base"
 
-const files = {
-  base: require("../base")
-}
+function test() {}
+
+const files = { base }
 
 fs.readdirSync(path.join(__dirname, "../rules")).forEach(name => {
   if (name === "react.js") {
     return
   }
 
-  files[name] = require(`../rules/${name}`)
+  files[name] = require(`../rules/${name}`) // eslint-disable-line global-require
 })
 
 Object.keys(files).forEach(name => {

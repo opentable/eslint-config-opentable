@@ -5,6 +5,7 @@ module.exports = {
     eqeqeq: [2, "allow-null"],
     "func-names": 0,
     indent: [2, 2, { SwitchCase: 1 }],
+    "max-len": [1, 120],
     "new-cap": [2, {
       capIsNewExceptions: ["$.Deferred"]
     }],
