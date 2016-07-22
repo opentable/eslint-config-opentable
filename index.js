@@ -1,24 +1,45 @@
 module.exports = {
-  extends: require.resolve("eslint-config-airbnb-base"),
+  extends: require.resolve('eslint-config-airbnb-base'),
   rules: {
-    "comma-dangle": [2, "never"],
-    eqeqeq: [2, "allow-null"],
-    "func-names": 0,
-    indent: [2, 2, { SwitchCase: 1 }],
-    "max-len": [1, 120],
-    "new-cap": [2, {
-      capIsNewExceptions: ["$.Deferred"]
+
+    // Disallow comma-dangle
+    // http://eslint.org/docs/rules/comma-dangle
+    'comma-dangle': [2, 'never'],
+
+    // require the use of === and !==
+    // allow == null
+    // http://eslint.org/docs/rules/eqeqeq
+    eqeqeq: [2, 'allow-null'],
+
+    // Neither required nor prohibited
+    // AirBnB used to enable this, but since
+    // changed their rule to prefer
+    // function declarations and arrow functions
+    // to avoid function expressions.
+    // There's no difference here, just a precaution.
+    // http://eslint.org/docs/rules/func-names
+    'func-names': 0,
+
+    // specify the maximum length of a line
+    // http://eslint.org/docs/rules/max-len
+    'max-len': [2, {
+      code: 120,
+      tabWidth: 2,
+      ignoreComments: true,
+      ignoreUrls: true
     }],
-    "no-cond-assign": [2, "except-parens"],
-    "no-console": 0,
-    "no-nested-ternary": 0,
-    "one-var": [2, {
-      uninitialized: "always",
-      initialized: "never"
+
+    // Adds $.Deferred as an exception to the new-cap
+    // rule, since it should not be used with new
+    // http://eslint.org/docs/rules/new-cap
+    'new-cap': [2, {
+      capIsNewExceptions: ['$.Deferred']
     }],
-    "one-var-declaration-per-line": 0,
-    quotes: [2, "double", "avoid-escape"],
-    semi: [2, "never"],
-    "space-before-function-paren": [2, "never"]
+
+    // A minor difference for assignments in a conditional expression
+    // Instead of setting to ''always'', parenthesis make an assignment explicit
+    // This is not explained in the AirBnB style guide either
+    // http://eslint.org/docs/rules/no-cond-assign
+    'no-cond-assign': [2, 'except-parens']
   }
-}
+};
