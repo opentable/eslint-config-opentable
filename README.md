@@ -4,8 +4,6 @@ This package provides OpenTable's .eslintrc as an extensible shared config. We e
 
 ## Usage
 
-We export three ESLint configurations for your usage.
-
 The export lints ES6/2015+. It requires `eslint`.
 
 1. `npm install --save-dev eslint-config-opentable eslint`
@@ -15,19 +13,28 @@ See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more information.
 
-## Major differences
+## Dependencies
 
-The main difference between this config and airbnb's is that we have adopted
-a more Coffeescript-like syntax as we begin the transfer from Coffeescript to ES6.
+Note that ESLint 3.0+, which is a dependency of this config, requires Node 4+.
 
-- Semicolons must be excluded. JS developers should understand Automatic Semicolon Insertion rules whether semicolons are used or not.
-  For more info, see [An Open Letter to JavaScript Leaders Regarding Semicolons](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
-  and [Everything You Need to Know About ASI](http://inimino.org/~inimino/blog/javascript_semicolon).
-  Fortunately, eslint should warn when it looks like a semicolon is required, but it doesn't happen often.
-- Double quotes instead of single.
-- Console logs are allowed.
-- Double equals (`==`) is permitted for one special case: `== null`. This allows you to determine equality with `undefined` and/or `null` in one statement.
-- Function names are not required in function expressions.
-- Nested ternaries are allowed.
-- Comma dangle is turned off.
-- While we still enforce the capitalization convention when using `new`, we've included a very common capitalized factory function exception that should not be used with `new`: `$.Deferred`.
+## Differences with AirBnB
+
+There are a few minor differences between this config and AirBnB's. Links are to AirBnB's styleguide.
+
+- [15.1](https://github.com/airbnb/javascript#comparison--eqeqeq) eqeqeq (prefer `===` to `==`) - **Yes, but with "allow-null" turned on**
+
+  > Why? Comparing to both `null` and `undefined` can be done succinctly with `== null`.
+  This is now enabled in AirBnB's config as well, but the style guide has not been updated.
+
+- [18.12](https://github.com/airbnb/javascript#whitespace--max-len) Max line length: 100 - **Increased to 120**
+
+  > Why? We just wanted to allow longer lines.
+
+- [19.2](https://github.com/airbnb/javascript#commas--dangling) Comma dangle - **No**
+
+  > Why? We found the extra comma distracting.
+
+- [22.3](https://github.com/airbnb/javascript#naming--PascalCase) Use PascalCase only when naming constructors or classes. - **Yes, but one exception**
+
+  > Why? We added $.Deferred as a common exception, since it should not be used with the `new` keyword.
+
