@@ -13,7 +13,11 @@ See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more information.
 
-## Differences
+## Dependencies
+
+Note that ESLint 3.0+, which is a dependency of this config, requires Node 4+.
+
+## Differences with AirBnB
 
 There are a few minor differences between this config and AirBnB's. Links are to AirBnB's styleguide.
 
