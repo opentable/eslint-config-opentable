@@ -13,7 +13,7 @@ const files = {
   fs
 };
 
-fs.readdirSync(path.join(__dirname, '../rules')).forEach(name => {
+fs.readdirSync(path.join(__dirname, '../rules')).forEach((name) => {
   if (name === 'react.js') {
     return;
   }
@@ -21,10 +21,10 @@ fs.readdirSync(path.join(__dirname, '../rules')).forEach(name => {
   files[name] = `../rules/${name}`;
 });
 
-Object.keys(files).forEach(name => {
+Object.keys(files).forEach((name) => {
   const config = files[name];
 
-  test(`${name}: does not reference react`, t => {
+  test(`${name}: does not reference react`, (t) => {
     t.plan(2);
 
     t.notOk(config.plugins, 'plugins is unspecified');
