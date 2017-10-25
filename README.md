@@ -6,7 +6,7 @@ This package provides OpenTable's .eslintrc as an extensible shared config. We e
 
 ## Usage
 
-The export lints ES6/2015+. It requires `eslint`.
+The export lints ES6/2015+. It requires `eslint` and `eslint-plugin-import`.
 
 1. `npm install --save-dev eslint-config-opentable eslint`
 2. add `"extends": "opentable"` to your .eslintrc
