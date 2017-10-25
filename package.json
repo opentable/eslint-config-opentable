@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-opentable",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "This package provides OpenTable's .eslintrc as an extensible shared config.",
   "main": "index.js",
   "scripts": {
@@ -15,17 +15,17 @@
     "opentable",
     "config"
   ],
-  "author": "Timmy Willison <timmywillisn@gmail.com>",
+  "author": "OpenTable <npm-publish@opentable.onmicrosoft.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opentable/eslint-config-opentable/issues"
   },
   "homepage": "https://github.com/opentable/eslint-config-opentable",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0"
+    "eslint-config-airbnb-base": "16.1.0",
+    "eslint-plugin-import": "2.8.0"
   },
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "4.9.0"
   }
 }

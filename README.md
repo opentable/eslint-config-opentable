@@ -24,11 +24,6 @@ For support in Node <4, use eslint-config-opentable version 4.x.
 
 There are a few minor differences between this config and AirBnB's. Links are to AirBnB's styleguide.
 
-- [15.1](https://github.com/airbnb/javascript#comparison--eqeqeq) eqeqeq (prefer `===` to `==`) - **Yes, but with "allow-null" turned on**
-
-  > Why? Comparing to both `null` and `undefined` can be done succinctly with `== null`.
-  This is now enabled in AirBnB's config as well, but the style guide has not been updated.
-
 - [18.12](https://github.com/airbnb/javascript#whitespace--max-len) Max line length: 100 - **Increased to 120**
 
   > Why? We just wanted to allow longer lines.
@@ -47,3 +42,4 @@ This repo doesn't change too often, so issues or requests may not be noticed qui
 
 - [Kalev Roomann-Kurrik](mailto:kroomannkurrik@opentable.com)
 - [Ward Ruth](mailto:wruth@opentable.com)
+- [Wesley Windrose](mailto:wwindrose@opentable.com)
