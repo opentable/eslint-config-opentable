@@ -1,15 +1,9 @@
 module.exports = {
   extends: require.resolve('eslint-config-airbnb-base'),
   rules: {
-
     // Disallow comma-dangle
     // http://eslint.org/docs/rules/comma-dangle
     'comma-dangle': [2, 'never'],
-
-    // require the use of === and !==
-    // allow == null
-    // http://eslint.org/docs/rules/eqeqeq
-    eqeqeq: [2, 'allow-null'],
 
     // Neither required nor prohibited
     // AirBnB used to enable this, but since
