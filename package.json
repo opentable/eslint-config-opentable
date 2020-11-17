@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/opentable/eslint-config-opentable",
   "dependencies": {
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-plugin-import": "2.8.0"
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1"
   },
   "devDependencies": {
-    "eslint": "4.9.0"
+    "eslint": "7.13.0"
   }
 }
