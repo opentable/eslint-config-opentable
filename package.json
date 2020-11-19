@@ -16,6 +16,9 @@
     "config"
   ],
   "author": "OpenTable <npm-publish@opentable.onmicrosoft.com>",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opentable/eslint-config-opentable/issues"
