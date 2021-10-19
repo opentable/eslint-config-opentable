@@ -40,6 +40,4 @@ There are a few minor differences between this config and AirBnB's. Links are to
 
 This repo doesn't change too often, so issues or requests may not be noticed quickly. Please contact the maintainers directly to call an issue to their attention.
 
-- [Kalev Roomann-Kurrik](mailto:kroomannkurrik@opentable.com)
 - [Ward Ruth](mailto:wruth@opentable.com)
-- [Wesley Windrose](mailto:wwindrose@opentable.com)
